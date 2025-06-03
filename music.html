@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>listen - Web player</title>
+</head>
+
+<body>
+    <div class="container flex">
+
+        <div class="left border bg-black">
+            <div class="home bg-grey rounded m1 p1  ">
+                <div style="display: flex; gap: 5px;"><img src="logo.png" alt="" class="logo">
+                    <li class="listen">listen</li> <img src="close.svg" alt="" class="close">
+                </div>
+                <ul>
+                    <li><img src="home.png" alt="home" class="homelogo"> Home</li>
+                    <li><img src="search .png" alt="home" class="search"> search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m1 p1 height">
+                <div class="heading">
+                    <img class="lib" src="library .png" alt="img">
+                    <h2>
+                        Your library
+                    </h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="right border bg-grey rounded height">
+            <div class="header bg-black rounded">
+                <div class="nav">
+                    <img class="hamburger" src="hamburger.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M11.5 18C11.5 18 5.50001 13.5811 5.5 12C5.49999 10.4188 11.5 6 11.5 6" stroke="#000000"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M18.5 18C18.5 18 12.5 13.5811 12.5 12C12.5 10.4188 18.5 6 18.5 6" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path d="M12.5 18C12.5 18 18.5 13.5811 18.5 12C18.5 10.4188 12.5 6 12.5 6" stroke="#000000"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M5.50005 18C5.50005 18 11.5 13.5811 11.5 12C11.5 10.4188 5.5 6 5.5 6" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+
+                </div>
+                <div class="button">
+                    <button class="signbtn">Sign up</button>
+                    <button class="loginbtn">login</button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h2>listen playlist</h2>
+                <div class="cardcontainer">
+                </div>   
+            </div>
+             <div class="playbar">
+                    <div class="seekbar">
+                        <div id="progress"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="lowerbar">
+                        <div class="songinfo">
+                            songinfo
+                        </div>
+                        <div class="songbutton">
+                            <img id="previous" src="backward-play.png" alt="">
+                            <img id="play" src="playbutton.png" alt="">
+                            <img id="next" src="forward-play.png" alt="">
+                        </div>
+                        <div class="volume"><img src="volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" class="volrange">
+                            </div>
+                        </div>
+                        <div class="songtime">
+                            00:00/00:00
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
